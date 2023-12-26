@@ -6,19 +6,27 @@ A terminal emulator for Cutefish.
 
 [qmltermwidget](https://github.com/Swordfish90/qmltermwidget).
 
-## Dependencies
+## OpenMandriva Dependencies
 
-```sh
-sudo apt install extra-cmake-modules qtbase5-dev qtdeclarative5-dev qtquickcontrols2-5-dev qttools5-dev
+```shell
+sudo dnf in task-develop
+sudo dnf install extra-cmake-modules 
+(qtbase5-dev qtdeclarative5-dev qtquickcontrols2-5-dev qttools5-dev)
 ```
 
-## Build and install
-```sh
+## Build
+
+```shell
 mkdir build
 cd build
 cmake ..
 make
-make install
+```
+
+## Install
+
+```shell
+sudo make install
 ```
 
 ## License
